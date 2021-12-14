@@ -32,24 +32,21 @@ const humanNumber = Math.floor(Math.random() * 6) + 1;
 const pcNumber = Math.floor(Math.random() * 6) + 1;
 
 // 2 stabilire il vincitore
-if ((humanNumber > pcNumber) || (humanNumber < pcNumber)){
-    if (humanNumber > pcNumber){
+console.log(`The results are: human ${humanNumber} - ${pcNumber} computer`);
 
-        console.log(`The results are: human ${humanNumber} - ${pcNumber} computer`);
-        console.log('The winner is: the human');
+if (humanNumber > pcNumber){
 
-    }
-    else{
-
-        console.log(`The results are: human ${humanNumber} - ${pcNumber} computer`);
-        console.log('The winner is: the computer');
-
-    }
+    console.log('The winner is: the human');
 
 }
+else if (humanNumber < pcNumber){
+
+    console.log('The winner is: the computer');
+
+}
+
 else{
 
-    console.log(`The results are: human ${humanNumber} - ${pcNumber} computer`);
     console.log('It\'s a tie');
 
 }
